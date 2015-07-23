@@ -1,0 +1,99 @@
+.form-signin {
+    max-width: 330px;
+    margin: 0 auto;
+    padding: 15px;
+    .form-signin-heading,
+    .checkbox {
+        margin-bottom: 10px;
+    }
+    .checkbox {
+        font-weight: normal;
+    }
+    .form-control {
+        font-size: 16px;
+
+        position: relative;
+
+        -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+                box-sizing: border-box;
+        height: auto;
+        padding: 10px;
+        &:focus {
+            z-index: 2;
+        }
+    }
+    input {
+        margin-bottom: 10px;
+    }
+}
+
+div.alert-danger {
+    h1 {
+        text-align: center;
+    }
+    ul {
+        padding-left: 1.5em;
+
+        text-align: left;
+    }
+}
+
+.to-left {
+    float: left;
+}
+
+.comments-divider {
+    width: 30em;
+}
+
+.comment-container p {
+    text-align: left;
+}
+
+.form-signin-extended {
+    max-width: 50em !important;
+    p {
+        line-height: 1.7;
+
+        text-align: justify;
+        -webkit-hyphens: auto;
+           -moz-hyphens: auto;
+                hyphens: auto;
+    }
+}
+
+.table-wrapped {
+    table-layout: fixed;
+
+    -ms-word-wrap: break-word;
+        word-wrap: break-word;
+}
+
+.td-container {
+    position: relative;
+}
+.td-content {
+    position: absolute;
+
+    overflow: hidden;
+
+    max-width: 100%;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.td-spacer {
+    overflow: hidden;
+
+    height: 0;
+}
+
+.jumbotron p {
+    line-height: 1.7;
+
+    text-align: justify;
+    -webkit-hyphens: auto;
+       -moz-hyphens: auto;
+            hyphens: auto;
+}

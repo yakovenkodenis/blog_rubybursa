@@ -1,0 +1,11 @@
+<div>
+	<h2 class="text-center">Add a comment:</h2>
+
+	<%= simple_form_for([@article, @article.comments.build], html: { class: 'form-signin' }) do |f| %>
+		<%= f.input :commenter, label: false, placeholder: 'Nickname', input_html: { class: 'form-control' } %>
+
+		<%= f.input :body, as: 'text', label: false, placeholder: 'Your comment goes here...', input_html: { class: 'form-control' } %>
+
+		<%= f.button :submit, 'Submit the comment', class: 'btn btn-primary btn-block' %>
+	<% end %>
+</div>

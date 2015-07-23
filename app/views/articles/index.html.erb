@@ -1,0 +1,39 @@
+<div class="container">
+	<div class="jumbotron">
+		<h2 class="text-center">Articles</h2>
+	</div>
+
+	<%= link_to 'New article', new_article_path, class: 'btn btn-primary' %>
+	<br><br>
+	<table class="table table-condensed table-hover table-wrapped">
+		<tr>
+			<th>#</th>
+			<th>Title</th>
+			<th>Text</th>
+			<th>Functions</th>
+		</tr>
+
+		<% @articles.each do |article| %>
+			<tr>
+				<td><%= article.id %></td>
+				<td><%= article.title %></td>
+				<td>
+					<div class="td-container">
+						<div class="td-content">
+							<%= article.text %>
+						</div>
+						<div class="td-spacer">
+							<%= article.text %>
+						</div>
+					</div>
+				</td>
+				<td>
+					<%= link_to 'Show', article_path(article), class: 'btn btn-primary' %>
+					<%= link_to 'Edit', edit_article_path(article), class: 'btn btn-primary' %>
+					<%= link_to 'Delete', article_path(article), class: 'btn btn-primary', method: :delete, data: { confirm: 'Are you sure?' } %>
+				</td>
+			</tr>
+		<% end %>
+	</table>
+
+</div>

@@ -1,0 +1,14 @@
+<div class="jumbotron">
+	<p>
+		<strong>Title:</strong>
+		<%= @article.title %>
+	</p>
+
+	<p>
+		<strong>Text:</strong>
+		<%= @article.text %>
+	</p>
+	<br>
+    <%= link_to 'Edit', edit_article_path, class: 'btn btn-primary' %>
+    <%= link_to 'Back', articles_path, class: 'btn btn-primary' %>
+</div>

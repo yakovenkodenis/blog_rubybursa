@@ -1,0 +1,20 @@
+<h2 class="text-center">Comments:</h2>
+<% @article.comments.each do |comment| %>
+	<div class="text-center comment-container form-signin form-signin-extended">
+		<p>
+			<strong>Commenter: </strong>
+			<%= comment.commenter %>
+		</p>
+		<p>
+			<strong>Comment: </strong>
+			<%= comment.body %>
+		</p>
+		<p>
+			<%= link_to 'Delete comment', [comment.article, comment],
+			                              class: 'btn btn-default',
+			                              method: :delete,
+			                              data: { confirm: 'Are you sure?' } %>
+		</p>
+		<hr class="comments-divider">
+	</div>
+<% end %>
